@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <link rel="manifest" href="/manifest.webmanifest">
+
+  <!-- TODO replace description -->
+  <meta name="description" content="a p5.js javascript PWA starter template">
+
+  <!-- TODO select theme color -->
+  <meta name="theme-color" content="#FFFFFF" />
+
+  <!-- TODO replace the icons -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/img/icon_192.png">
+
+  <!-- TODO replace the title -->
+  <title>p5.js Javascript PWA</title>
+
+  <!-- load p5.js -->
+  <script src="/lib/p5.min.js"></script>
+
+  <!-- run the Sketch -->
+  <script src="/script/sketch.js"></script>
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/service-worker.js').then(function (registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function (err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
+      });
+    }    
+  </script>
+
+</head>
+
+<body>
+
+  <!-- TODO the body -->
+  <header>
+    <h1 class="centered">PWA - p5.js</h1>
+  </header>
+
+
+</body>
+
+</html>

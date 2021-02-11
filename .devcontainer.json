@@ -1,0 +1,15 @@
+{
+  "name": "${localWorkspaceFolderBasename}",
+  "image": "mcr.microsoft.com/vscode/devcontainers/javascript-node:14",
+  "runArgs": ["--name", "${localWorkspaceFolderBasename}"],
+
+	"extensions": [
+    "dbaeumer.vscode-eslint",
+    "eamodio.gitlens",
+    "mhutchie.git-graph",
+    "gruntfuggly.todo-tree",
+  ],
+
+  "postCreateCommand": "yarn global add live-server",
+ 
+}
