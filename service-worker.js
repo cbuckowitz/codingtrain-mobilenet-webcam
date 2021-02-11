@@ -1,5 +1,5 @@
 const CACHE_NAME = 'url_cache';
-const VERSION = '0.0.1';
+const VERSION = '0.0.2';
 
 const PRECACHE_URLS = [
   'manifest.webmanifest',

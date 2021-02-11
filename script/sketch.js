@@ -4,7 +4,11 @@ let video;
 let label;
 
 function preload() {
-  video = createCapture(VIDEO);
+  video = createCapture({
+    video: {
+      facingMode: { ideal: "environment" }
+    }
+  });
 }
 
 function setup() {
