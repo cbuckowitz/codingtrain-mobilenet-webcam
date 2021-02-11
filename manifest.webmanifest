@@ -1,7 +1,7 @@
 {
-  "short_name": "PWA - p5js",
-  "name": "PWA - p5.js Starter",
-  "description": "//TODO change name, icons and adjust manifest",
+  "short_name": "ML5 WebCam",
+  "name": "ML5 Mobilenet WebCam Image Classification",
+  "description": "Image classification with MobileNet using real-time video",
 
   "icons": [
     {
